@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="/res/css/main.css">
+
+    <title>RumbleInTheJungle</title>
+</head>
+
+<body style="background-color: #008080;">
+    <div id="container" align="center">
+        <div class="window" style="width: fit-content">
+            <div class="title-bar">
+                <div class="title-bar-text">Hello World</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <table>
+                    <td>
+                    <img src="res/img/paint.gif" id="pfp">&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td id="infobox" align="center">
+                        <h3 id="window">RumbleInTheJungle</h3>
+                        <hr>
+                        <div id="info">
+                            <p style="margin: 5px;">CTF Team from Norway</p>
+                        </div>
+                        <br>
+                        <a href="mailto:rumblectf@gmail.com" title="E-Mail us"><button id="social"><img id="social" src="res/img/mail-icon.png"></button></a>&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/watch?v=3Jpjn9xcfCU" title="Lets Get Ready to Rumble!!"><button id="social"><img id="social" src="res/img/question_mark.png"></button></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/rumblectf" title="Twitter"><button id="Twitter"><img id="social" src="res/img/globe.png"></button></a>&nbsp;&nbsp;
+                        <a href="https://ctftime.org/team/182472" title="Main website"><button id="CTFTime"><img id="social" src="res/img/tree.png"></button></a>
+                        <br>
+                        <br>
+                        <div class="sunken-panel" style="width: fit-content"">
+                            <table class="interactive">
+                              <thead>
+                                <tr>
+                                  <th>CTF 2023</th>
+                                  <th>Place</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td>TG:Hack 2023</td>
+                                    <td>1st🥇</td>
+                                  </tr>
+                                <tr>
+                                <tr>
+                                    <td>CYBERGON CTF 2023</td>
+                                    <td>2nd🥈</td>
+                                  </tr>
+                                <tr>
+                                    <td>VU CYBERTHON 2023</td>
+                                    <td>2nd🥈</td>
+                                  </tr>
+                                <tr>
+                                    <td>ICSJWG Spring 2023</td>
+                                    <td>4th</td>
+                                  </tr>
+                                <tr>
+                                  <td>Equinor CTF 2023</td>
+                                  <td>4th</td>
+                                </tr>
+                                <tr>
+                                  <td>1337UP LIVE CTF</td>
+                                  <td>5th</td>
+                                </tr>
+                                <tr>
+                                  <td>BYUCTF 2023</td>
+                                  <td>5th</td>
+                                </tr>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <script>
+                            document.querySelectorAll('table.interactive').forEach(element => {
+                              element.addEventListener('click', (event) => {
+                                const row = event.path.find(element => element.tagName === 'TR' && element.parentElement.tagName === 'TBODY');
+                                if (row) {
+                                  row.classList.toggle('highlighted');
+                                }
+                              })
+                            });
+                          </script>
+                    </td>
+                </table>
+            </ul>
+        </div>
+        <div class="status-bar">
+          <p class="status-bar-field">Press F1 for help</p>
+          <p class="status-bar-field">Windows 98</p>
+          <p class="status-bar-field">CPU Usage: 14%</p>
+        </div>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
